@@ -1,0 +1,297 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar (n) */
+.n {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1100px;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.l {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #d7ccc8;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.u {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.u li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.u li a:hover {
+    color: #d7ccc8;
+}
+
+/* Main Card (m) */
+.m {
+    background: url("../no7.jpg")no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 92%;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Info Panel (i) */
+.i {
+    flex: 1;
+    padding: 50px;
+    background: rgba(45, 33, 28, 0.92);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #d7ccc8;
+}
+
+.p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+.c {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.c i {
+    color: #d7ccc8;
+    width: 20px;
+    text-align: center;
+}
+
+.s {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.si {
+    color: #d7ccc8;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+
+.si:hover {
+    transform: translateY(-5px);
+    color: #fff;
+}
+
+/* Reservation Panel (r) */
+.r {
+    flex: 1.5;
+    padding: 50px;
+}
+
+.t {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(215, 204, 200, 0.2);
+    padding-bottom: 10px;
+}
+
+/* Grid (g) and Fields (f) */
+.g {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.f {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+/* Form inputs - تكبير الخط */
+.f input,
+.f select,
+.f textarea {
+    width: 100%;
+    padding: 14px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    /* حجم الخط الأكبر */
+    transition: 0.3s;
+}
+
+input[type="date"],
+input[type="time"] {
+    color-scheme: dark;
+}
+
+/* Placeholder تكبير */
+.f input::placeholder,
+.f textarea::placeholder,
+.f select::placeholder {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Label تكبير */
+.lbl {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 1.1rem;
+    
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+/* Label لما يتحرك */
+.f input:focus~.lbl,
+.f input:valid~.lbl,
+.f select:focus~.lbl,
+.f select:valid~.lbl,
+.f textarea:focus~.lbl,
+.f textarea:valid~.lbl {
+    transform: translateY(-25px);
+    font-size: 1rem;
+    
+    color: #d7ccc8;
+}
+
+/* Button (btn) */
+.btn {
+    background: #d7ccc8;
+    color: #2d211c;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background: #fff;
+    box-shadow: 0;
+}
+.features-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 60px 0;
+    /* مسافة فوق وتحت */
+}
+
+.feature {
+    text-align: center;
+}
+
+/* الصورة */
+.feature img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d2b48c;
+    /* بيج */
+    display: block;
+    margin: auto;
+}
+
+/* النص */
+.feature h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    /* كبرنا الخط */
+    color: #d2b48c;
+    /* بيج */
+    font-family: "Georgia", serif;
+    /* خط شيك */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.features-title {
+    font-family: "Georgia", serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* أول سطر أبيض */
+.features-title {
+    color: #98683b;
+}
+
+/* لو عايزة كلمة "Comfort Every Time" برتقالي */
+.features-title br+text {
+    color:#f5f5f5;
+}
+
+/* الوصف */
+.features-desc {
+    text-align: center;
+    font-size: 14px;
+    color: #d2b48c;
+    /* بيج */
+    margin-top: 10px;
+    font-family: "Georgia", serif;
+}

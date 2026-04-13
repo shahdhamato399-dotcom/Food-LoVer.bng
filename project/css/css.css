@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+}
+
+#menu {
+    background: #2f2f2fce;
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 32px;
+    color: #fc7108eb;
+    font-family: 'Georgia', serif;
+}
+
+.title p {
+    color: #ee9c73;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-left,
+.menu-item-right {
+    width: 48%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e0d3c2;
+    padding-bottom: 15px;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #b3a194;
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    margin: 0;
+    color: #6d5011fa;
+    font-family: 'Georgia', serif;
+}
+
+.price {
+    color: #c08b5c;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.price del {
+    color: gray;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.menu-item p {
+    margin: 5px 0 0;
+    color: #7a5c4d;
+    font-size: 14px;
+}
+
+/* Reserve Button */
+.reserve-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reserve-btn {
+    display: inline-block;
+    background-color: #c08b5c;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.reserve-btn:hover {
+    background-color: #a67950;
+    transform: scale(1.05);
+    color: #000;
+}

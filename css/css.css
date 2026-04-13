@@ -1,0 +1,162 @@
+/* --- Menu Section --- */
+#menu {
+    background: rgba(0, 0, 0, 0.95);
+    /* أسود داكن */
+    padding: 60px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 42px;
+    /* أكبر */
+    color: #f5f5f5;
+    /* أبيض فاتح */
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title p {
+    color: rgba(242, 235, 229, 0.8);
+    font-size: 18px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item-left,
+.menu-item-right {
+    width: 48%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(212, 163, 115, 0.3);
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* فاتح شويه */
+    transform: scale(1.03);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.menu-item:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* عند الضغط يكون فاتح وواضح */
+    transform: scale(1.05);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #d4a373;
+    transition: 0.3s;
+}
+
+.menu-item:hover img,
+.menu-item:active img {
+    transform: scale(1.1);
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin: 0;
+    color: #d4a373;
+    /* اسم الوجبة باللون الذهبي */
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+}
+
+.menu-item:hover h3 {
+    color: #fff;
+    /* عند hover يتحول للون فاتح */
+}
+
+.menu-item:active h3 {
+    color: #fff;
+    font-size: 19px;
+}
+
+.price {
+    color: #c08b5c;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.price del {
+    color: gray;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.menu-item p {
+    margin: 5px 0 0;
+    color: #fff;
+    /* الوصف باللون الأبيض */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu-item:hover p,
+.menu-item:active p {
+    color: #f0f0f0;
+    /* فاتح عند الضغط أو hover */
+    font-size: 15px;
+}
+
+/* Reservation button inside Menu */
+.reserve-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reserve-btn {
+    display: inline-block;
+    background-color: #d4a373;
+    color: #2d211c;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.reserve-btn:hover {
+    background-color: #fff;
+    color: #2d211c;
+    transform: scale(1.05);
+}
