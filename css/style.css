@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
 }
 
-::selection{
+*::selection{
     background:biege;
     color:#a1a1a1;
 }
